@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="POM_SBA_Exam - Version2"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.956">
+    <properties></properties>
+
+
+
+            <testcase
+                name="searchProduct"
+                time="1.956"
+                classname="testcases.SearchFeatureTest">
+            </testcase>
+</testsuite>
