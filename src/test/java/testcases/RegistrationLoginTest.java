@@ -153,7 +153,7 @@ public class RegistrationLoginTest {
      */
 
     @Test(priority = 4)
-    public void checkProducts() throws IOException {
+    public void checkProducts() throws IOException, InterruptedException {
         test = extent.createTest("check_registrationForm_test", "Test Passed");
 
         signinBtn = new HomePage(driver);
@@ -161,8 +161,12 @@ public class RegistrationLoginTest {
         //very important to pass down the driver
         signInForm = new AuthenticationPage(driver);
         signInForm.registrationForm("shujuanhe1@gmail.com","12345");
-
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement goToHomeBtn = driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li/a/span"));
+//        Thread.sleep(500);
+        js.executeScript("arguments[0].scrollIntoView();", goToHomeBtn);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"center_column\"]/ul/li/a/span")));
         goToHomeBtn.click();
 
         //class ="replace-2x img-responsive" are all img in the home page
