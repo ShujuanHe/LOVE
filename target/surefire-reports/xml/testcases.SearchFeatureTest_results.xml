@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test suite"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="10.065">
+    <properties></properties>
+
+            <testcase
+                name="searchProduct"
+                time="10.065"
+                classname="testcases.SearchFeatureTest">
+
+            <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#search_query_top&quot;}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-VU75KT1&apos;, ip: &apos;10.0.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e002ab111b20fcc7871b46fb40dbaf1, findElement {using=id, value=search_query_top}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shuju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51732/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e002ab111b20fcc7871b46fb40dbaf1">
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_query_top"}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-VU75KT1', ip: '10.0.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e002ab111b20fcc7871b46fb40dbaf1, findElement {using=id, value=search_query_top}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\shuju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51732/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e002ab111b20fcc7871b46fb40dbaf1
+                sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.lang.reflect.Constructor.newInstance(Constructor.java:423)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)pages.HomePage.inputOnSearchPlaceHolder(HomePage.java:25)testcases.SearchFeatureTest.searchProduct(SearchFeatureTest.java:78)sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.lang.reflect.Method.invoke(Method.java:498)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)org.testng.internal.Invoker.invokeMethod(Invoker.java:583)org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)java.lang.Thread.run(Thread.java:748)
+]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>

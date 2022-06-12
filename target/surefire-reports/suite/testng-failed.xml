@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suite]" parallel="methods">
+  <test thread-count="2" verbose="0" name="test suite(failed)" parallel="methods">
+    <classes>
+      <class name="testcases.RegistrationLoginTest">
+        <methods>
+          <include name="checkProducts"/>
+          <include name="setUpReport"/>
+          <include name="launchBrowser"/>
+          <include name="checkGuestPurchaseProductFuc"/>
+          <include name="checkSignInBtnFuc"/>
+          <include name="checkCreateAccountFrom"/>
+          <include name="tearDown"/>
+          <include name="checkRegistrationForm"/>
+        </methods>
+      </class> <!-- testcases.RegistrationLoginTest -->
+      <class name="testcases.ProductDetailsTest">
+        <methods>
+          <include name="addToCartAfterFilter"/>
+          <include name="checkPopularProductBtn"/>
+          <include name="setUpReport"/>
+          <include name="checkQty"/>
+          <include name="checkProductColorAndSize"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.ProductDetailsTest -->
+      <class name="testcases.SearchFeatureTest">
+        <methods>
+          <include name="searchProduct"/>
+          <include name="tearDown"/>
+          <include name="setUpReport"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testcases.SearchFeatureTest -->
+    </classes>
+  </test> <!-- test suite(failed) -->
+</suite> <!-- Failed suite [suite] -->

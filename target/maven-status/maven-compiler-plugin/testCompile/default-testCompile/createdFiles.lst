@@ -1,0 +1,8 @@
+testcases\ProductDetailsTest.class
+pages\AuthenticationPage.class
+pages\HomePage.class
+library\SelectBrowser.class
+testcases\SearchFeatureTest.class
+org\example\AppTest.class
+pages\GuestCheckOutPage.class
+testcases\RegistrationLoginTest.class
